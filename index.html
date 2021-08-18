@@ -9,10 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -29,18 +25,12 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyResume - v4.3.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
@@ -401,7 +391,6 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-            <!-- action="forms/contact.php" method="post"  -->
             <form id="#sumbit_form" action="" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -437,13 +426,10 @@
                   let xmlhttp = new XMLHttpRequest();
                   xmlhttp.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
-                      // const result = JSON.stringify(this.responseText);
                       console.log(this.responseText);
-                      // if (result === '"done!"') {
-                      //   location.replace("index.html");
+
                       alert(`Thanks for contacting me, I'll be sure to reply as soon as possible, you will now be redirected to the Home Page`)
                       location.reload()
-                      // }
                     }
                   };
                   console.log(frm);
